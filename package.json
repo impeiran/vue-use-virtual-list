@@ -1,0 +1,15 @@
+{
+  "name": "vue-use-virtual-list",
+  "version": "0.0.1",
+  "description": "A composition hook for using virtual list in Vue 2 or 3.",
+  "main": "index.js",
+  "repository": "https://github.com/impeiran/vue-use-virtual-list.git",
+  "author": "impeiran",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "@vueuse/core": "^4.1.1",
+    "vue-demi": "^0.6.0"
+  }
+}
