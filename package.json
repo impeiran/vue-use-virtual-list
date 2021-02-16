@@ -2,14 +2,42 @@
   "name": "vue-use-virtual-list",
   "version": "0.0.1",
   "description": "A composition hook for using virtual list in Vue 2 or 3.",
-  "main": "index.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "typings": "lib/index.d.ts",
   "repository": "https://github.com/impeiran/vue-use-virtual-list.git",
   "author": "impeiran",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "tsc --emitDeclarationOnly && rollup -c"
+  },
   "dependencies": {
-    "@vue/composition-api": "^1.0.0-rc.1",
     "@vueuse/core": "^4.1.1",
     "vue-demi": "^0.6.0"
+  },
+  "optionalDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "rollup": "^2.39.0",
+    "rollup-plugin-dts": "^2.0.1",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.5",
+    "vue": "^3.0.5",
+    "vue-chemistry": "^0.2.2",
+    "vue2": "npm:vue@2"
   }
 }
