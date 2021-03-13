@@ -10,7 +10,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "tsc --emitDeclarationOnly && rollup -c"
+    "build": "tsc --emitDeclarationOnly && rollup -c rollup.config.ts"
   },
   "dependencies": {
     "@vueuse/core": "^4.1.1",

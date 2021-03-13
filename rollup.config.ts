@@ -1,9 +1,7 @@
-const pkg = require('./package.json')
-const pluginTypescript = require('rollup-plugin-typescript2')
-const pluginSourceMap = require('rollup-plugin-sourcemaps')
-const pluginDts = require('rollup-plugin-dts').default
-
-console.log(pluginDts)
+import pkg from './package.json'
+import pluginTypescript from 'rollup-plugin-typescript2'
+import pluginSourceMap from 'rollup-plugin-sourcemaps'
+import pluginDts from 'rollup-plugin-dts'
 
 module.exports = {
   input: 'index.ts',
@@ -19,7 +17,7 @@ module.exports = {
       file: pkg.module,
       exports: 'named',
       sourcemap: true
-    },
+    }
   ],
 
   external: [
