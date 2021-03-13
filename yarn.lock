@@ -128,13 +128,6 @@
     "@vue/compiler-core" "3.0.5"
     "@vue/shared" "3.0.5"
 
-"@vue/composition-api@^1.0.0-rc.1":
-  version "1.0.0-rc.1"
-  resolved "https://registry.npm.taobao.org/@vue/composition-api/download/@vue/composition-api-1.0.0-rc.1.tgz#d5286bbaffcd1987e56d5e3a9f26bfb6023e7c41"
-  integrity sha1-1Shruv/NGYflbV46nya/tgI+fEE=
-  dependencies:
-    tslib "^2.0.3"
-
 "@vue/eslint-config-standard@^5.1.2":
   version "5.1.2"
   resolved "https://registry.npm.taobao.org/@vue/eslint-config-standard/download/@vue/eslint-config-standard-5.1.2.tgz#c5d55af894a3ae23b65b1af4a425777ac0170b42"
@@ -180,15 +173,7 @@
   resolved "https://registry.npm.taobao.org/@vue/shared/download/@vue/shared-3.0.5.tgz#c131d88bd6713cc4d93b3bb1372edb1983225ff0"
   integrity sha1-wTHYi9ZxPMTZOzuxNy7bGYMiX/A=
 
-"@vueuse/core@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.npm.taobao.org/@vueuse/core/download/@vueuse/core-4.1.1.tgz#9136952bc435dfc42263959bea8dac35965bac43"
-  integrity sha1-kTaVK8Q138QiY5Wb6o2sNZZbrEM=
-  dependencies:
-    "@vueuse/shared" "4.1.1"
-    vue-demi latest
-
-"@vueuse/shared@4.1.1", "@vueuse/shared@^4.0.4":
+"@vueuse/shared@^4.0.4":
   version "4.1.1"
   resolved "https://registry.npm.taobao.org/@vueuse/shared/download/@vueuse/shared-4.1.1.tgz#58e4333d5ab45927e25578fad83bc81cecfea475"
   integrity sha1-WOQzPVq0WSfiVXj62DvIHOz+pHU=
@@ -2266,7 +2251,7 @@ tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.14.1.tgz?cache=0&sync_timestamp=1609887539329&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
 
-tslib@^2.0.3, tslib@^2.1.0:
+tslib@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-2.1.0.tgz?cache=0&sync_timestamp=1609887539329&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
   integrity sha1-2mCGDxwuyqVwOrfTm8Bba/mIuXo=
@@ -2370,7 +2355,7 @@ vue-chemistry@^0.2.2:
     "@vueuse/shared" "^4.0.4"
     vue-demi latest
 
-vue-demi@^0.6.0, vue-demi@latest:
+vue-demi@latest:
   version "0.6.0"
   resolved "https://registry.npm.taobao.org/vue-demi/download/vue-demi-0.6.0.tgz#e314282f704cb449119b9fd002cbbc0e39f591fe"
   integrity sha1-4xQoL3BMtEkRm5/QAsu8Djn1kf4=
