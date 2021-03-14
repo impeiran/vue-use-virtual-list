@@ -1,4 +1,4 @@
-import { ref, Ref, toRefs, onMounted, computed, watch } from 'vue-demi'
+import { ref, Ref, onMounted, computed, watch } from 'vue-demi'
 
 export interface BaseOption {
   direction?: 'vertical' | 'horizontal';
@@ -26,14 +26,17 @@ function useVirtualList <T = any> (list: Ref<T[]>, options: VerticalOption | Hor
     end: 0
   })
 
-  const { itemHeight, itemWidth, overscan, direction } = toRefs(options)
-  const overscanValue = overscan?.value || 0
-  const directionValue = direction?.value || 'vertical'
+  const {
+    itemHeight,
+    itemWidth,
+    overscan = 0,
+    direction = 'vertical'
+  } = options
 
-  const itemSizeValue = (directionValue === 'vertical' ? itemHeight : itemWidth)?.value || 0
+  const itemSizeValue = (direction === 'vertical' ? itemHeight : itemWidth) || 0
 
   const capacity = computed(() => {
-    const clientSize = directionValue === 'vertical'
+    const clientSize = direction === 'vertical'
       ? container.value?.clientHeight
       : container.value?.clientLeft
 
@@ -50,11 +53,11 @@ function useVirtualList <T = any> (list: Ref<T[]>, options: VerticalOption | Hor
     const element = container.value
     if (element) {
       const offset = getOffset(
-        directionValue === 'vertical' ? element.scrollTop : element.scrollLeft
+        direction === 'vertical' ? element.scrollTop : element.scrollLeft
       )
 
-      const from = Math.floor(offset) - overscanValue
-      const to = Math.ceil(offset) + capacity.value + overscanValue + 1
+      const from = Math.floor(offset) - overscan
+      const to = Math.ceil(offset) + capacity.value + overscan + 1
 
       range.value.start = Math.max(0, from)
       range.value.end = Math.min(to, list.value.length)
