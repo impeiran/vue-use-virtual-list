@@ -1,6 +1,6 @@
 {
   "name": "vue-use-virtual-list",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A composition hook for using virtual list in Vue 2 or 3.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
